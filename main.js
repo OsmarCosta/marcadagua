@@ -60,7 +60,7 @@ function configura(input, inputX, inputY) {
                 inputX.max = img.width;
                 inputY.max = img.height;          
             }
-            img.src = event.target.result;
+            img.src = e.target.result;
         };
         reader.readAsDataURL(input.files[0]);
     }
@@ -80,12 +80,9 @@ function desenha(input, canvas, ctx, tipo, o, x, y, w, h) {
                 } else if(tipo == 1){
                     ctx.globalAlpha = o;
                     ctx.drawImage(img, x, y, w, h);
-                } else {
-
-                }
-                
+                } 
             }
-            img.src = event.target.result;
+            img.src = e.target.result;
         };
 
         reader.readAsDataURL(input.files[0]);
