@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = utf-8/>
+    <link rel="stylesheet" href="style.css">
+    <title>Marca d'água</title>
+</head>
+<body>
+    <main>
+        <div>
+            <label>Imagem: </label>
+            <input type='file' id="inputImagem" class="input">
+        </div>
+
+        <div>
+            <label>Marca d'água: </label>
+            <input type='file' id="inputMarca" class="input">
+        </div>
+
+        <button id="montar">Montar</button>
+
+        <div>
+            <label>Transparência: </label>
+            <input type="range" min="0" max="10" id="tranparencia">
+
+            <label>Posição X: </label>
+            <input type="range" min="0" max="" id="x">
+
+            <label>Posição Y: </label>
+            <input type="range" min="0" max="" id="y">
+        </div>
+        
+        
+        <canvas width="720" height="360" id="canvas"></canvas>
+        <button id="baixar">Baixar</button>
+    </main>    
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="html2canvas.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
