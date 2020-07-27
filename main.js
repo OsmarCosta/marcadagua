@@ -75,7 +75,7 @@ function configura(input, inputX, inputY) {
             var img = new Image();
             img.onload = function(){
                 inputX.max = img.width;
-                inputY.max = img.height;          
+                inputY.max = img.height;       
             }
             img.src = e.target.result;
         };
@@ -98,7 +98,7 @@ function desenha(input, canvas, ctx, tipo, o, x, y, s) {
                 } else if(tipo == 1){
                     ctx.globalAlpha = o;
                     ctx.scale(s, s);
-                    ctx.drawImage(img, x, y);
+                    ctx.drawImage(img, (x/s), (y/s));
                 } 
             }
             img.src = e.target.result;
