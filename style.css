@@ -23,6 +23,7 @@ input{
     font-size: 10px;
 }
 #configuracoes{
+    zoom: 70%;
     font-size: 1em;
     padding: 10px;
     width: min-content;
@@ -39,5 +40,6 @@ input{
     background-color: #545454;
 }
 canvas{
-    margin-left: 6em;
+    margin-left: 8em;
+    zoom: 45%;
 }

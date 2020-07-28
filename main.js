@@ -98,7 +98,7 @@ function desenha(input, canvas, ctx, tipo, o, x, y, s) {
                 } else if(tipo == 1){
                     ctx.globalAlpha = o;
                     ctx.scale(s, s);
-                    ctx.drawImage(img, (x/s), (y/s));
+                    ctx.drawImage(img, (x/s), ((y/s) - (0.5 * s)));
                 } 
             }
             img.src = e.target.result;
